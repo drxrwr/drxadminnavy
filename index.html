@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title>Konversi TXT ke VCF</title>
+</head>
+<body>
+    <div class="container">
+        <h1>Konversi TXT ke VCF</h1>
+        
+        <!-- Tombol On/Off untuk fitur penomoran kontak -->
+        <div class="toggle-container">
+            <label class="switch">
+                <input type="checkbox" id="numberingToggle">
+                <span class="slider"></span>
+            </label>
+            <span>Aktifkan 0 di belakang nomor kontak</span>
+        </div>
+
+        <!-- Checkbox untuk memisahkan kontak admin -->
+        <div class="toggle-container">
+            <label class="switch">
+                <input type="checkbox" id="separateAdminToggle">
+                <span class="slider"></span>
+            </label>
+            <span>Pisahkan Kontak Admin</span>
+        </div>
+
+        <!-- Tombol upload file -->
+        <input type="file" id="uploadFileInput" accept=".txt" />
+        
+        <textarea id="txtContentBox" rows="10" placeholder="Atau masukkan konten TXT di sini..."></textarea>
+        
+        <input type="text" id="adminNameInput" placeholder="Nama Admin" />
+        <input type="text" id="navyNameInput" placeholder="Nama Navy" />
+        <input type="text" id="anggotaNameInput" placeholder="Nama Anggota" />
+        <input type="text" id="vcfFilenameInput" placeholder="Nama File VCF" />
+        
+        <button id="convertTxtToVcfButton">Konversi</button>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
