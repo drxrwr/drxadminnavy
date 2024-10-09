@@ -107,7 +107,7 @@ document.getElementById('convertTxtToVcfButton').addEventListener('click', funct
       const urlAdminNavy = URL.createObjectURL(blobAdminNavy);
       const aAdminNavy = document.createElement('a');
       aAdminNavy.href = urlAdminNavy;
-      aAdminNavy.download = `${filename}_Admin.vcf`;
+      aAdminNavy.download = `ADMIN_${filename}.vcf`;
       aAdminNavy.click();
       URL.revokeObjectURL(urlAdminNavy);
   }
