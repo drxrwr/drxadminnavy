@@ -1,0 +1,151 @@
+/* Mengatur tata letak dan warna latar belakang */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #2c2f33;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+}
+
+/* Container untuk menampung semua elemen */
+.container {
+    background-color: #23272a;
+    padding: 20px;
+    border-radius: 8px;
+    width: 100%;
+    max-width: 400px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+/* Style untuk judul */
+h2 {
+    text-align: center;
+    color: white;
+    margin-bottom: 20px;
+}
+
+/* Upload file section */
+.file-upload {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 20px;
+}
+
+.custom-file-upload {
+    background-color: #7289da;
+    color: white;
+    padding: 8px 16px;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+#fileInput {
+    display: none;
+}
+
+#fileName {
+    margin-left: 10px;
+    font-size: 12px;
+}
+
+/* Switch container untuk tombol on/off */
+.switch-container {
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+/* Tombol switch (on/off) */
+.switch {
+    position: relative;
+    display: inline-block;
+    width: 40px;
+    height: 20px;
+    margin-right: 10px;
+}
+
+.switch input {
+    opacity: 0;
+    width: 0;
+    height: 0;
+}
+
+.slider {
+    position: absolute;
+    cursor: pointer;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: #ccc;
+    transition: 0.4s;
+    border-radius: 20px;
+}
+
+.slider:before {
+    position: absolute;
+    content: "";
+    height: 14px;
+    width: 14px;
+    left: 3px;
+    bottom: 3px;
+    background-color: white;
+    transition: 0.4s;
+    border-radius: 50%;
+}
+
+input:checked + .slider {
+    background-color: #5b6da8; /* Warna biru ketika aktif */
+}
+
+input:checked + .slider:before {
+    transform: translateX(20px);
+}
+
+/* Label untuk switch */
+.label-text {
+    font-size: 14px;
+}
+
+/* Style untuk input teks */
+input[type="text"] {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 10px;
+    border: none;
+    border-radius: 4px;
+    background-color: #2c2f33;
+    color: white;
+}
+
+/* Style untuk textarea */
+textarea {
+    width: 100%;
+    padding: 10px;
+    background-color: #2c2f33;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    margin-bottom: 20px;
+}
+
+/* Style untuk tombol submit */
+button {
+    width: 100%;
+    padding: 10px;
+    background-color: #7289da;
+    border: none;
+    color: white;
+    font-size: 16px;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+button:hover {
+    background-color: #5b6da8;
+}
