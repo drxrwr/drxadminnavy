@@ -49,17 +49,17 @@ document.getElementById('convertTxtToVcfButton').addEventListener('click', funct
       const lowerCaseLine = line.toLowerCase();
 
       // Kategori Admin
-      if (['admin', '管理号', '管理', '管理员', '管理號'].includes(lowerCaseLine)) {
+      if (['admin', 'Admin', '管理号', '管理', '管理员', '管理號'].includes(lowerCaseLine)) {
           currentCategory = adminName;
           contactIndexAdminNavy = 1; // Reset index for admin
       } 
       // Kategori Navy
-      else if (['navy', '水軍', '小号', '水军', '水軍'].includes(lowerCaseLine)) {
+      else if (['navy', 'Navy', '水軍', '小号', '水军', '水軍'].includes(lowerCaseLine)) {
           currentCategory = navyName;
           contactIndexAdminNavy = 1; // Reset index for navy
       } 
       // Kategori Anggota
-      else if (['anggota', '数据', '客户', '底料', '进群资源'].includes(lowerCaseLine)) {
+      else if (['anggota', 'Anggota', '数据', '客户', '底料', '进群资源'].includes(lowerCaseLine)) {
           currentCategory = anggotaName;
           contactIndexAnggota = 1; // Reset index for anggota
       } 
